@@ -17,7 +17,7 @@ Note: Due to the delay of the crawling process for **depth** greater than 3, the
 ## libraries
 The code uses the following libraries in Python:
 
-**bs4** (BeautifulSoup)
+**BeautifulSoup** (bs4)
 
 **requests**
 
