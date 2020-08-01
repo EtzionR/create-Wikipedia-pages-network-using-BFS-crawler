@@ -10,7 +10,7 @@ In order to identify the links of each page on the web, we must perform a proces
 
 Each link is saved under a python object (**Link class**) so it will be easy to retrieve and organize the information about it. Also, the Object handles UTF conversion errors (source for conversions dictionary from: [utf8-chartable](https://www.utf8-chartable.de/)). The code exports all of these links to a single CSV file so that it is convenient to explore and use afterwards.
 
-Below, the code allows the creation of a graph based on the links we found. The graph adds its name to each central node so that the dominant pages on the network can be discerned. In order to find the key nodes we will use the networkx HITS algorithm. Then, we will attach its name to each Node only if it is indeed relatively central in the network (its hub score will be larger than average + standard deviation).
+Also, the code allows the creation of a graph based on the links we found. The graph adds its name to each central node so that the dominant pages on the network can be discerned. In order to find the key nodes we will use the networkx HITS algorithm. Then, we will attach its name to each Node only if it is indeed relatively central in the network (its hub score will be larger than average + standard deviation).
 
 Note: Due to the delay of the crawling process for **depth** greater than 3, the runtime of the code may be extremely long
 
@@ -43,9 +43,9 @@ To use this code, you just need to import it as follows:
 from wiki_crawler import wikipedia_network
 
 # define variables
-url = r'https://en.wikipedia.org/wiki/something'		# original page
-depth = 2	# search distance from the original page
-plot = True	# bool (default: False)
+url = r'https://en.wikipedia.org/wiki/something'  # original page
+depth = 2	                                        # search distance from the original page
+plot = True	                                      # bool (default: False)
 
 # application
 wikipedia_network(url, depth, plot)
