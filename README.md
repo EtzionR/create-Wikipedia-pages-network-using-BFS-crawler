@@ -5,7 +5,7 @@ Gets a Wikipedia page URL and creates a network of all pages that link to it at 
 ## introduction
 A Wikipedia page consists many links between the various pages on the site. These links can also be viewed as a graph: where the pages are used as **nodes** and the links as **edges**.
 
-When we want to examine the graph to a certain depth, we can use the **BFS** algorithm which is designed to search the graph. Using this algorithm we can reach any of the nodes at a certain distance from the original page. The distance is determined by the **"depth"** parameter, which sets the distance to search for pages from the original page.
+When we want to examine the graph to a certain depth, we can use the adapted **BFS** algorithm which is designed to search the graph. Using this algorithm we can reach any of the nodes at a certain distance from the original page. The distance is determined by the **"depth"** parameter, which sets the distance to search for pages from the original page.
 
 In order to identify the links of each page on the web, we must perform a **crawling** process on each of them. In this process we can locate the links the page contains to other Wikipedia pages. In order to get the most relevant links, the algorithm filters only the introduction section of each page. This section of the page is filtered using **BeautifulSoup** to get only the correct links. In order to avoid blocking by the site, between each search there is a wait of one second.
 
