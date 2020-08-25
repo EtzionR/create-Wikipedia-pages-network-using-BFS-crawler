@@ -53,5 +53,11 @@ plot = True	                                      # bool (default: False)
 wikipedia_network(url, depth, plot)
 ```
 
+When the variables displayed are:
 
+**url:** url string of the base Wikipedia page
+
+**bin:** search distance to pages, from the original page
+
+**name:** string which represents the filename of the plot you want to save
 
