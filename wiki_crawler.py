@@ -7,7 +7,6 @@ import pandas as pd
 import requests
 
 WIKI = r'https://en.wikipedia.org'
-
 PREFIX = len(WIKI+'/wiki/')
 UTF={'%21' : '!', '%22' : '"', '%24' : '$', '%25' : '%', '%26' : '&', '%27' : "'", '%2F' : '/',
      '%28' : '(', '%29' : ')', '%2A' : '*', '%2B' : '+', '%2C' : ',', '%2D' : '-', '%2E' : '.',
