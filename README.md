@@ -13,7 +13,7 @@ Each link is saved under a python object (**"Link"** class), so it will be easy 
 
 Also, the code allows the creation of a **networkx graph**, based on the links we found. The graph adds its name to each central node so that the dominant pages on the network can be discerned. In order to find the main nodes we will use the networkx **HITS** algorithm. Then, we will attach its name to each Node only if it indeed relatively central in the network (its hub score will be larger than average + standard deviation). output example:
 
-![example](https://github.com/EtzionData/create-Wikipedia-pages-network-using-BFS-crawler/blob/master/Michelangelo%20network%20graph%20for%20depth%3D2.png)
+![example](https://github.com/EtzionData/create-Wikipedia-pages-network-using-BFS-crawler/blob/master/Output/Michelangelo%20network%20graph%20for%20depth%3D2.png)
 
 Note: Due to the delay of the crawling process, for **depth** greater than 3, the runtime of the code may be extremely long
 
