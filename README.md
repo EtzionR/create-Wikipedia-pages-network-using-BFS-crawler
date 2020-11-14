@@ -15,7 +15,7 @@ Also, the code allows the creation of a **networkx graph**, based on the links w
 
 ![example](https://github.com/EtzionData/create-Wikipedia-pages-network-using-BFS-crawler/blob/master/Output/Michelangelo%20network%20graph%20for%20depth%3D2.png)
 
-**Note:** Due to the delay of the crawling process, for **depth** greater than 3, the runtime of the code may be extremely long
+**Note:** Due to the built-in delay of the crawling process, for **depth** greater than 3, the runtime of the code may be extremely long.
 
 ## libraries
 The code uses the following libraries in Python:
