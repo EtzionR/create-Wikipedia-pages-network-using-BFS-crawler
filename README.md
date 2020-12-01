@@ -1,8 +1,8 @@
-## create-Wikipedia-pages-network-using-BFS-crawler
+## Create-Wikipedia-pages-network-using-BFS-crawler
 Gets a Wikipedia page URL and creates a network of all pages that link to it at a certain distance.
 
 
-## introduction
+## Introduction
 A Wikipedia page consists many links between the various pages on the site. These links can also be viewed as a graph: where the pages are used as **nodes** and the links as **edges**.
 
 When we want to examine the graph to a certain depth, we can use the adapted **BFS** algorithm which is designed to search the graph. Using this algorithm we can reach any of the nodes at a certain distance from the original page. The distance is determined by the **"depth"** parameter, which sets the distance to search for pages from the original page.
@@ -17,7 +17,7 @@ Also, the code allows the creation of a **networkx graph**, based on the links w
 
 **Note:** Due to the built-in delay of the crawling process, for **depth** greater than 3, the runtime of the code may be extremely long.
 
-## libraries
+## Libraries
 The code uses the following libraries in Python:
 
 **BeautifulSoup** (bs4)
@@ -33,7 +33,7 @@ The code uses the following libraries in Python:
 Also, **time** & **queue** libraries 
 
 
-## application
+## Application
 An application of the code is attached to this page under the name: 
 
 [**"implementation.py"**](https://github.com/EtzionData/create-Wikipedia-pages-network-using-BFS-crawler/blob/master/implementation.py)
@@ -41,7 +41,7 @@ An application of the code is attached to this page under the name:
 the examples outputs are also attached here.
 
 
-## example for using the code
+## Example for using the code
 To use this code, you just need to import it as follows:
 ``` sh
 # import
