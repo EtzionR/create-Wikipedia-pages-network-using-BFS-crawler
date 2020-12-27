@@ -2,7 +2,7 @@
 Gets a Wikipedia page URL and creates a network of all pages that link to it at a certain distance.
 
 
-## Introduction
+## Overview
 A Wikipedia page consists many links between the various pages on the site. These links can also be viewed as a graph: where the pages are used as **nodes** and the links as **edges**.
 
 When we want to examine the graph to a certain depth, we can use the adapted **BFS** algorithm which is designed to search the graph. Using this algorithm we can reach any of the nodes at a certain distance from the original page. The distance is determined by the **"depth"** parameter, which sets the distance to search for pages from the original page.
