@@ -1,3 +1,7 @@
+# Create by Etzion Harari
+# https://github.com/EtzionR
+
+# Load libraries:
 from bs4 import BeautifulSoup as bs
 import matplotlib.pyplot as plt
 from time import sleep as wait
@@ -6,6 +10,7 @@ import networkx as nx
 import pandas as pd
 import requests
 
+# usefule variables
 WIKI = r'https://en.wikipedia.org'
 PREFIX = len(WIKI+'/wiki/')
 UTF={'%21' : '!', '%22' : '"', '%24' : '$', '%25' : '%', '%26' : '&', '%27' : "'", '%2F' : '/',
@@ -121,3 +126,5 @@ def wikipedia_network(url,depth=2, plot=False):
     data = links_to_df(links)
     data.to_csv(f'{name} links for n={depth}.csv', encoding='utf-8', index=False)
     if plot: create_network(data,depth,name)
+
+# MIT © Etzion Harari
