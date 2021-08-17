@@ -127,4 +127,5 @@ def wikipedia_network(url,depth=2, plot=False):
     data.to_csv(f'{name} links for n={depth}.csv', encoding='utf-8', index=False)
     if plot: create_network(data,depth,name)
 
+# License
 # MIT © Etzion Harari
